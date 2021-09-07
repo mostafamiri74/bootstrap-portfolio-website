@@ -1,0 +1,71 @@
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $color-bg-body;
+  border-radius: 1.25rem 0 0 1.25rem;
+  box-shadow: 3px 3px 8px rgba(77, 81, 92, 10%);
+
+  padding: 8rem 3rem;
+  font-size: 1rem;
+  color: $color-primary;
+  z-index: 3;
+
+  transition: all 0.3s;
+
+  display: flex;
+
+  @media only screen and (max-width: $bp-large) {
+    display: none;
+  }
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      padding: 1rem 0;
+      transition: all 3s ease-in-out;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 1.9rem;
+    position: relative;
+    transform: translateY(0);
+
+    &:hover svg,
+    .nav__link-active {
+      transform: translateY(-1rem);
+      transition-duration: 0.6s;
+    }
+
+    &-title {
+      position: absolute;
+      top: 0;
+      left: -5px;
+      opacity: 0;
+      color: $color-primary;
+      transition: all 0.4s linear;
+
+      &-home {
+        left: 1px;
+      }
+    }
+
+    &:hover &-title,
+    &-title-active {
+      opacity: 1;
+      transform: translateY(1.5rem);
+    }
+  }
+
+  &__active {
+    color: $color-primary !important;
+    position: relative;
+  }
+}

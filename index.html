@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- link css files -->
+
+    <link
+      href="http://www.fontonline.ir/css/BYekan.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Mostafa Miri | Portfolio With Bootstrap And Js</title>
+  </head>
+
+  <body dir="rtl">
+
+    <!-- start navigation section -->
+    <nav class="nav text-center" >
+      <ul class="d-flex flex-column justify-content-around align-items-center">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">
+            <i class="fas fa-home fa-1x text-yellow nav__link-active"></i>
+            <h5 class="nav__link-title nav__link-title-home nav__link-title-active">خانه</h5>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#about-me" class="nav__link">
+            <i class="fas fa-user fa-1x text-yellow"></i>
+            <h5 class="nav__link-title">درباره من</h5>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#cv" class="nav__link">
+            <i class="fas fa-address-book fa-1x text-yellow"></i>
+            <h5 class="nav__link-title">رزومه</h5>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#portfolio" class="nav__link">
+            <i class="fas fa-briefcase fa-1x text-yellow"></i>
+            <h5 class="nav__link-title">نمونه کارها</h5>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#weblog" class="nav__link">
+            <i class="fas fa-file-alt fa-1x text-yellow"></i>
+            <h5 class="nav__link-title">وبلاگ</h5>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#call" class="nav__link">
+            <i class="fas fa-envelope-open fa-1x text-yellow"></i>
+            <h5 class="nav__link-title">تماس با من</h5>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end navigation section -->
+
+    <!-- start home section -->
+    <section class="home section-active text-md-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 order-2 order-lg-0 d-flex flex-column justify-content-center align-items-center align-items-lg-start px-5 pb-5 pb-lg-0">
+            <h2 class="display-1">مصطفی میری</h2>
+            <h4 class="display-6 u-margin-y-medium">
+              من یک <span class="text-yellow">|</span> <span id="Typed"></span>
+            </h4>
+            <p class="paragraph w-75">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+          <div class="col-lg-6 order-0 order-lg-2 text-center">
+            <figure class="home__profile-box m-0">
+              <img
+                src="img/personal-image-05.jpg"
+                alt="Person on a tour"
+                class="home__profile-img"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home section -->
+
+    <!-- start about-me section -->
+    <section class="about-me">
+      <div class="container">
+        <div class="col-12 section-title">
+          <h2 class="display-1"><span class="text-yellow">درباره </span>من</h2>
+          <p class="paragraph">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-6">
+            <figure class="about-me__profile-box m-0 text-center text-xl-start">
+              <img
+                src="img/about-01.jpg"
+                alt="Person on a tour"
+                class="about-me__profile-img"
+              />
+            </figure>
+          </div>
+
+          <div class="col-xl-6 mt-5 mt-xl-0 ">
+            <h3 class="display-6 pb-5">برنامه نویس و توسعه دهنده وبسایت</h3>
+            <div class="row">
+              <div class="col-6">
+                <p class="h3 pb-5">
+                  تاریخ تولد : <span class="paragraph"> اسفند ۱۳۷۴ </span>
+                </p>
+                <p class="h3 pb-5">
+                  وب سایت : <span class="paragraph"> www.sample.com </span>
+                </p>
+                <p class="h3 pb-5">
+                  تلفن : <span class="paragraph"> ۰۹۱۳۴۴۴۵۵۵۵ </span>
+                </p>
+                <p class="h3 pb-5">
+                  شهر : <span class="paragraph"> مشهد </span>
+                </p>
+              </div>
+              <div class="col-6">
+                <p class="h3 pb-5">سن : <span class="paragraph"> ۲۶ </span></p>
+                <p class="h3 pb-5">
+                  مدرک : <span class="paragraph"> کارشناسی </span>
+                </p>
+                <p class="h3 pb-5">
+                  ایمیل :
+                  <span class="paragraph"> mostafamiri12345@gmail.com </span>
+                </p>
+                <p class="h3 pb-5">
+                  فریلنسر : <span class="paragraph"> بله </span>
+                </p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <a class="btn btn--yellow u-margin-left-small">دانلود رزومه</a>
+              <a class="btn btn--yellow">استخدام من</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="statistic content u-margin-top-medium py-5">
+          <div class="row">
+            <div class="col-md-3 text-center py-5 d-flex flex-column align-items-center">
+              <i class="fal fa-download statistic__icon text-yellow"></i>
+              <span class="statistic-number my-4">+۱۰</span>
+              <p class="h2">سال تجربه</p>
+            </div>
+
+            <div class="col-md-3 text-center py-5 d-flex flex-column align-items-center">
+              <i class="fal fa-sticky-note statistic__icon text-yellow"></i>
+              <span class="statistic-number my-4">+۱۰</span>
+              <p class="h2">پروژه های انجام شده</p>
+            </div>
+
+            <div class="col-md-3 text-center py-5 d-flex flex-column align-items-center">
+              <i class="fal fa-medal statistic__icon text-yellow"></i>
+              <span class="statistic-number my-4">+۱۰</span>
+              <p class="h2">جایزه های دریافت شده</p>
+            </div>
+
+            <div class="col-md-3 text-center py-5 d-flex flex-column align-items-center">
+              <i class="fal fa-smile statistic__icon text-yellow"></i>
+              <span class="statistic-number my-4">+۱۰</span>
+              <p class="h2">رضایتمندی مشتریان</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-services u-margin-top-big">
+          <h2 class="display-4 pb-5">
+            <span class="text-yellow">خدمات </span>من
+          </h2>
+          <div class="row g-5">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row content py-5 px-4 mx-1">
+                <div class="col-2 pt-1">
+                  <i class="fal fa-pen fa-4x text-yellow"></i>
+                </div>
+                <div class="col-10">
+                  <h3 class="mb-5">طراحی گرافیک</h3>
+                  <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row content py-5 px-4 mx-1">
+                <div class="col-2 pt-1">
+                  <i class="fal fa-check-circle fa-4x text-yellow"></i>
+                </div>
+                <div class="col-10">
+                  <h3 class="mb-5">پشتیبانی فنی</h3>
+                  <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row content py-5 px-4 mx-1">
+                <div class="col-2 pt-1">
+                  <i class="fal fa-heart fa-4x text-yellow"></i>
+                </div>
+                <div class="col-10">
+                  <h3 class="mb-5">تبلیغات</h3>
+                  <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row content py-5 px-4 mx-1">
+                <div class="col-2 pt-1">
+                  <i class="fal fa-mobile fa-4x text-yellow"></i>
+                </div>
+                <div class="col-10">
+                  <h3 class="mb-5">طراحی ریسپانسیو</h3>
+                  <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row content py-5 px-4 mx-1">
+                <div class="col-2 pt-1">
+                  <i class="fal fa-globe fa-4x text-yellow"></i>
+                </div>
+                <div class="col-10">
+                  <h3 class="mb-5">هرآنچه انتظاردارید</h3>
+                  <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="row content py-5 px-4 mx-1">
+                <div class="col-2 pt-1">
+                  <i class="fal fa-trophy fa-4x text-yellow"></i>
+                </div>
+                <div class="col-10">
+                  <h3 class="mb-5">پشتیبانی حرفه ای</h3>
+                  <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="comment u-margin-top-big">
+          <h2 class="display-4 pb-5">
+            <span class="text-yellow">نظر </span>مشتریان
+          </h2>
+          <div class="row g-5 mt-4">
+            <div class="comment__card col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+              <div class="content py-5 px-5 mx-1">
+                <div class="comment__pic-box">
+                  <figure class="comment__pic">
+                    <img
+                      src="img/client-01.png"
+                      alt="natural"
+                      class="comment__img"
+                    />
+                  </figure>
+                </div>
+                  <p class="paragraph mt-5">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+                  <h3 class="">طراحی گرافیک</h3>
+              </div>
+            </div>
+            
+            <div class="comment__card col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+              <div class="content py-5 px-5 mx-1">
+                <div class="comment__pic-box">
+                  <figure class="comment__pic">
+                    <img
+                      src="img/client-02.png"
+                      alt="natural"
+                      class="comment__img"
+                    />
+                  </figure>
+                </div>
+                  <p class="paragraph mt-5">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+                  <h3 class="">طراحی گرافیک</h3>
+              </div>
+            </div>
+
+            <div class="comment__card col-12 col-md-6 col-lg-4">
+              <div class="content py-5 px-5 mx-1">
+                <div class="comment__pic-box">
+                  <figure class="comment__pic">
+                    <img
+                      src="img/client-03.png"
+                      alt="natural"
+                      class="comment__img"
+                    />
+                  </figure>
+                </div>
+                  <p class="paragraph mt-5">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+                  <h3 class="">طراحی گرافیک</h3>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about-me section -->
+
+    <!-- start cv section -->
+    <section class="cv">
+      <div class="container">
+        <div class="col-12 section-title">
+          <h2 class="display-1"><span class="text-yellow">رزومه </span>من</h2>
+          <p class="paragraph">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+
+        <div class="past row g-5">
+          <div class="col-12 col-lg-6">
+            <i class="fal fa-graduation-cap fa-3x text-yellow"></i>
+            <h3 class="display-5 pb-5 d-inline-block px-4">
+              تحصیلات
+            </h3>
+            <div class="content py-5">
+              <div class="cv__box-content">
+                <h3 class="mb-3">کارشناسی درحوزه گرافیک</h3>
+                <p class="text-yellow h4 mb-3">۱۳۸۹ - ۱۳۹۲</p>
+                <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+              </div>
+              <div class="cv__box-content">
+                <h3 class="mb-3">تحصیلات در دانشگاه تهران</h3>
+                <p class="text-yellow h4 mb-3">۱۳۹۲ - ۱۳۹۵</p>
+                <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+              </div>
+              <div class="cv__box-content">
+                <h3 class="mb-3">توسعه دهنده UI/UX</h3>
+                <p class="text-yellow h4 mb-3">۱۳۹۵ - ۱۳۹۷</p>
+                <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+              </div>
+            </div> 
+          </div>
+          
+          <div class="col-12 col-lg-6">
+            <i class="fal fa-pencil fa-3x text-yellow"></i>
+            <h3 class="display-5 pb-5 d-inline-block px-4">
+              تجربیات
+            </h3>
+            <div class="content py-5">
+              <div class="cv__box-content">
+                <h3 class="mb-3">کارشناسی درحوزه گرافیک</h3>
+                <p class="text-yellow h4 mb-3">۱۳۸۹ - ۱۳۹۲</p>
+                <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+              </div>
+              <div class="cv__box-content">
+                <h3 class="mb-3">تحصیلات در دانشگاه تهران</h3>
+                <p class="text-yellow h4 mb-3">۱۳۹۲ - ۱۳۹۵</p>
+                <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+              </div>
+              <div class="cv__box-content">
+                <h3 class="mb-3">توسعه دهنده UI/UX</h3>
+                <p class="text-yellow h4 mb-3">۱۳۹۵ - ۱۳۹۷</p>
+                <p class="paragraph">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+              </div>
+            </div> 
+          </div>
+        </div>
+
+        <div class="skills row g-5 my-5">
+          <div class="col-12 col-lg-6">
+            <h3 class="display-5 pb-5 d-inline-block px-4">
+              <span class="text-yellow">مهارت </span>کار
+            </h3>
+            <div class="content p-5">
+              <div class="">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="m-0"><strong>Html</strong></h4>
+                  <p class="paragraph mb-1">۷۰ %</p>
+                </div>
+                <div class="skills__line"></div>
+              </div>
+              <div class="">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="m-0"><strong>Css</strong></h4>
+                  <p class="paragraph mb-1">۶۵ %</p>
+                </div>
+                <div class="skills__line"></div>
+              </div>
+              <div class="">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="m-0"><strong>JavaSctipt</strong></h4>
+                  <p class="paragraph mb-1">۷۵ %</p>
+                </div>
+                <div class="skills__line"></div>
+              </div>
+              <div class="">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="m-0"><strong>JQuery</strong></h4>
+                  <p class="paragraph mb-1">۸۰ %</p>
+                </div>
+                <div class="skills__line"></div>
+              </div>
+            </div> 
+          </div>
+          
+          <div class="col-12 col-lg-6">
+            <h3 class="display-5 pb-5 d-inline-block px-4">
+              <span class="text-yellow">مهارت </span>زبان
+            </h3>
+            <div class="content p-5">
+              <div class="d-flex justify-content-between align-items-center mb-5 mt-3">
+                <h4 class="m-0"><strong>انگلیسی</strong></h4>
+                <div>
+                  <i class="fa fa-star-half-alt fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-5">
+                <h4 class="m-0"><strong>آلمانی</strong></h4>
+                <div>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-5">
+                <h4 class="m-0"><strong>عربی</strong></h4>
+                <div>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center mb-5">
+                <h4 class="m-0"><strong>هندی</strong></h4>
+                <div>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="m-0"><strong>ترکی</strong></h4>
+                <div>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fal fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                  <i class="fa fa-star fa-2x text-yellow"></i>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end cv section -->
+
+    <!-- start portfolio section -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="col-12 section-title">
+          <h2 class="display-1"><span class="text-yellow">کارهای </span>من</h2>
+          <p class="paragraph">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+
+        <div class="portfolio__menu mt-5">
+          <ul class="d-flex justify-content-center align-items-center list-unstyled paragraph">
+            <li class="px-0 px-lg-4">
+              <a
+                class="portfolio__link portfolio__active"
+                data-filter="all"
+                >همه</a
+              >
+            </li>
+            <li class="px-0 px-lg-4">
+              <a class="portfolio__link" data-filter="1">طراحی لوگو</a>
+            </li>
+            <li class="px-0 px-lg-4">
+              <a class="portfolio__link" data-filter="2">طراحی وب </a>
+            </li>
+            <li class="px-0 px-lg-4">
+              <a class="portfolio__link" data-filter="3">عکاسی</a>
+            </li>
+            <li class="px-0 px-lg-4">
+              <a class="portfolio__link" data-filter="4">گرافیک</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="row g-5 mt-5">
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="1">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-10.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="3">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-11.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="5">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-12.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="2">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-13.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="1">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-14.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="4">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-15.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="5">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-16.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="3">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-17.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+          <div class="portfolio__card col-12 col-md-6 col-lg-4" data-category="2">
+                <figure class="portfolio__pic">
+                  <img
+                    src="img/portfolio-18.jpg"
+                    alt="portfolio-image"
+                    class="portfolio__img img-fluid"
+                  />
+                </figure>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- end portfolio section -->
+
+    <!-- start weblog section -->
+    <section class="weblog">
+      <div class="container">
+        <div class="col-12 section-title">
+          <h2 class="display-1"><span class="text-yellow">پست های </span>اخیر</h2>
+          <p class="paragraph">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+
+        <div class="row g-5 u-margin-top-huge">
+          
+          <div class="weblog__card-box col-12 col-lg-4  ">
+            <div class="weblog__card content mx-1">   
+                <figure class="weblog__pic">
+                  <img
+                    src="img/blog-01.jpg"
+                    alt="natural"
+                    class="weblog__img img-fluid"
+                  />
+                </figure>
+              <div class="row">
+                <div class="col-6 d-flex">
+                  <i class="fal fa-calendar-alt fa-2x text-yellow"></i>
+                  <p class="paragraph pb-5 d-inline-block px-4">اسفند ۹۸</p>
+                </div>
+                <div class="col-6 d-flex">
+                  <i class="fal fa-comment-alt-dots fa-2x text-yellow"></i>
+                  <p class="paragraph pb-5 d-inline-block px-4">۱۵</p>
+                </div>
+              </div>
+              <h3 class="pb-3">طراحی گرافیک</h3>
+              <p class="paragraph">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+              <a href="#" class="btn btn-text">ادامه مطلب...</a>
+            </div>
+          </div>
+          <div class="weblog__card-box col-12 col-lg-4  ">
+            <div class="weblog__card content mx-1">
+              
+            <div class="weblog__pic-box">
+              <figure class="weblog__pic">
+                <img
+                  src="img/blog-02.jpg"
+                  alt="natural"
+                  class="weblog__img img-fluid"
+                />
+              </figure>
+            </div>
+            <div class="row">
+              <div class="col-6 d-flex">
+                <i class="fal fa-calendar-alt fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">اسفند ۹۸</p>
+              </div>
+              <div class="col-6 d-flex">
+                <i class="fal fa-comment-alt-dots fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">۱۵</p>
+              </div>
+            </div>
+            <h3 class="pb-3">طراحی گرافیک</h3>
+            <p class="paragraph">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+            <a href="#" class="btn btn-text">ادامه مطلب...</a>
+            </div>
+          </div>
+          <div class="weblog__card-box col-12 col-lg-4  ">
+            <div class="weblog__card content mx-1">             
+              <div class="weblog__pic-box">
+                <figure class="weblog__pic">
+                  <img
+                    src="img/blog-03.jpg"
+                    alt="natural"
+                    class="weblog__img img-fluid"
+                  />
+                </figure>
+              </div>
+              <div class="row">
+                <div class="col-6 d-flex">
+                  <i class="fal fa-calendar-alt fa-2x text-yellow"></i>
+                  <p class="paragraph pb-5 d-inline-block px-4">اسفند ۹۸</p>
+                </div>
+                <div class="col-6 d-flex">
+                  <i class="fal fa-comment-alt-dots fa-2x text-yellow"></i>
+                  <p class="paragraph pb-5 d-inline-block px-4">۱۵</p>
+                </div>
+              </div>
+              <h3 class="pb-3">طراحی گرافیک</h3>
+              <p class="paragraph">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+              <a href="#" class="btn btn-text">ادامه مطلب...</a>
+            </div>
+          </div>
+          <div class="weblog__card-box-bottom col-12 col-lg-4">
+            <div class="weblog__card content mx-1">             
+            <div class="weblog__pic-box">
+              <figure class="weblog__pic">
+                <img
+                  src="img/blog-04.jpg"
+                  alt="natural"
+                  class="weblog__img img-fluid"
+                />
+              </figure>
+            </div>
+            <div class="row">
+              <div class="col-6 d-flex">
+                <i class="fal fa-calendar-alt fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">اسفند ۹۸</p>
+              </div>
+              <div class="col-6 d-flex">
+                <i class="fal fa-comment-alt-dots fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">۱۵</p>
+              </div>
+            </div>
+            <h3 class="pb-3">طراحی گرافیک</h3>
+            <p class="paragraph">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+            <a href="#" class="btn btn-text">ادامه مطلب...</a>
+            </div>
+          </div>
+          <div class="weblog__card-box-bottom col-12 col-lg-4">
+            <div class="weblog__card content mx-1">
+              
+            <div class="weblog__pic-box">
+              <figure class="weblog__pic">
+                <img
+                  src="img/blog-05.jpg"
+                  alt="natural"
+                  class="weblog__img img-fluid"
+                />
+              </figure>
+            </div>
+            <div class="row">
+              <div class="col-6 d-flex">
+                <i class="fal fa-calendar-alt fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">اسفند ۹۸</p>
+              </div>
+              <div class="col-6 d-flex">
+                <i class="fal fa-comment-alt-dots fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">۱۵</p>
+              </div>
+            </div>
+            <h3 class="pb-3">طراحی گرافیک</h3>
+            <p class="paragraph">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+            <a href="#" class="btn btn-text">ادامه مطلب...</a>
+            </div>
+          </div>
+          <div class="weblog__card-box-bottom col-12 col-lg-4">
+            <div class="weblog__card content mx-1">
+              
+            <div class="weblog__pic-box">
+              <figure class="weblog__pic">
+                <img
+                  src="img/blog-06.jpg"
+                  alt="natural"
+                  class="weblog__img img-fluid"
+                />
+              </figure>
+            </div>
+            <div class="row">
+              <div class="col-6 d-flex">
+                <i class="fal fa-calendar-alt fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">اسفند ۹۸</p>
+              </div>
+              <div class="col-6 d-flex">
+                <i class="fal fa-comment-alt-dots fa-2x text-yellow"></i>
+                <p class="paragraph pb-5 d-inline-block px-4">۱۵</p>
+              </div>
+            </div>
+            <h3 class="pb-3">طراحی گرافیک</h3>
+            <p class="paragraph">" لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. "</p>
+            <a href="#" class="btn btn-text">ادامه مطلب...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end weblog section -->
+
+    <!-- start call section -->
+    <section class="call">
+      <div class="container">
+        <div class="col-12 section-title">
+          <h2 class="display-1"><span class="text-yellow">ارتباط </span>با من</h2>
+          <p class="paragraph">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است.
+          </p>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-around pt-5">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <i class="fal fa-phone fa-4x text-yellow"></i>
+            <p class="h2 pt-5 pb-1">تلفن تماس</p>
+            <p class="paragraph pb-5 d-inline-block">09134448888</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <i class="fal fa-map-marker-alt fa-4x text-yellow"></i>
+            <p class="h2 pt-5 pb-1">آدرس دفتر</p>
+            <p class="paragraph pb-5 d-inline-block">مشهد - بلوار اندیشه</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <i class="fal fa-envelope fa-4x text-yellow"></i>
+            <p class="h2 pt-5 pb-1">ایمیل من</p>
+            <p class="paragraph pb-5 d-inline-block">info@example.com</p>
+          </div>
+        </div>
+        <form class="call__form">
+          <input
+            type="text"
+            class="call__form__input"
+            placeholder="نام شما"
+          />
+          <input
+            type="text"
+            class="call__form__input"
+            placeholder="ایمیل شما"
+          />
+
+          <input
+            type="text"
+            class="call__form__input2"
+            placeholder="موضوع..."
+          />
+          <textarea
+            class="call__form__input2"
+            cols="30"
+            rows="10"
+            placeholder="پیام شما..."
+          ></textarea>
+        </form>
+        <a href="#" class="btn btn--yellow">دانلود رزومه</a>
+      </div>
+    </section>
+    <!-- end call section -->
+
+    <!-- link js files -->
+    <script src="js/app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/typed.js/lib/typed.js"></script>
+    <script src="./fonts/fontawesome/js/all.min.js"></script>
+  </body>
+</html>

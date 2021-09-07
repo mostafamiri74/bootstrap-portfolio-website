@@ -1,0 +1,272 @@
+.home {
+  height: 100vh;
+  padding-top: 9rem;
+  margin-bottom: 0;
+
+  @media only screen and (max-width: $bp-large) {
+    padding-top: 3rem;
+    margin-bottom: 19rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem 0;
+  }
+
+  &__profile-box {
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+  }
+
+  &__profile-img {
+    height: 100%;
+    backface-visibility: hidden;
+  }
+}
+
+.about-me {
+  &__profile-box {
+    width: 100%;
+    height: 36rem;
+    overflow: hidden;
+    display: inline-block;
+    // box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+
+    @media only screen and (max-width: $bp-large) {
+      height: 43rem;
+    }
+  }
+
+  &__profile-img {
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+}
+
+.statistic {
+  font-size: 2.5rem;
+
+  &__icon {
+    font-size: 4rem;
+  }
+}
+
+.comment {
+  &__card {
+    position: relative;
+  }
+
+  &__pic-box {
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -22%;
+    right: 15%;
+    background-color: $color-bg-body;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__pic {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin: 0;
+    border: 1.5px solid $color-grey-border;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  &__img {
+    height: 100%;
+    backface-visibility: hidden;
+    border: 4px solid $color-bg-body;
+    border-radius: 50%;
+  }
+}
+
+.cv {
+  &__box-content {
+    position: relative;
+    padding: 1rem 7rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      right: 3.4rem;
+      height: 80%;
+      border-radius: 2rem;
+      width: 2px;
+      background: $color-primary;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2.5rem;
+      right: 2.7rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      width: 1.5rem;
+      background: $color-primary;
+    }
+  }
+}
+
+.skills {
+  &__line {
+    width: 100%;
+    height: 1rem;
+    background-color: $color-grey-dark-1;
+    margin: 0.3rem 0 2rem 0;
+    position: relative;
+    border-radius: 3rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80%;
+      height: 1rem;
+      border-radius: 3rem;
+      background-color: $color-primary;
+    }
+  }
+}
+
+.portfolio {
+  &__pic {
+    overflow: hidden;
+    border-radius: 1.5rem;
+  }
+
+  &__img {
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 1.5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-grey-dark-2;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-primary;
+      color: $color-grey-dark;
+      border-radius: 2rem;
+    }
+  }
+
+  &__active {
+    background-color: $color-primary;
+    color: $color-grey-dark;
+    border-radius: 2rem;
+  }
+
+  &-show {
+    animation: fadeIn 1s ease;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &-hide {
+    display: none;
+  }
+}
+
+.weblog {
+  &__card-box-bottom {
+    margin-top: 15rem;
+
+    @media only screen and (max-width: 992px) {
+      margin-top: 3rem;
+      margin-bottom: 11rem;
+    }
+  }
+
+  &__card {
+    position: relative;
+    padding: 14rem 3rem 3rem 3rem;
+
+    &-box {
+      margin-bottom: 0;
+      @media only screen and (max-width: 992px) {
+        margin-bottom: 11rem;
+      }
+    }
+  }
+
+  &__pic {
+    width: 80%;
+    margin: 0;
+    // border: 1.5px solid $color-grey-border;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    top: -25%;
+    right: 10%;
+  }
+
+  &__img {
+    backface-visibility: hidden;
+    border: 4px solid $color-bg-body;
+    border-radius: 2rem;
+
+    @media only screen and (max-width: 992px) {
+      max-width: 55%;
+    }
+  }
+}
+
+.call {
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 4rem;
+
+    & > * {
+      margin-bottom: 3rem;
+      padding: 1.5rem 0.7rem;
+      background-color: $color-bg-content;
+      border-radius: 0.2rem;
+      border: 0;
+      border-radius: 3rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__input {
+      width: 49%;
+    }
+
+    &__input2 {
+      width: 100%;
+    }
+  }
+}

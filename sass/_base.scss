@@ -1,0 +1,268 @@
+/////////////////////
+
+// -variables
+
+////////////////////
+
+// COLORS
+$color-primary: #ddae3f;
+$color-primary-light: #ffca4f;
+$color-primary-dark: #c99d38;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-border: #e3e5d2;
+
+$color-grey-dark: rgb(243, 243, 243);
+$color-grey-dark-1: rgb(209, 209, 209);
+$color-grey-dark-2: rgb(128, 128, 128);
+$color-grey-dark-3: rgb(63, 63, 63);
+$color-grey-dark-4: rgb(34, 34, 34);
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-bg-body: #f8f8f8;
+
+$color-bg-content: rgba(240, 240, 240, 0.7);
+
+///////////////////////
+
+//////  base
+
+///////////////////////
+
+// FONT
+$default-font-size: 1.6rem;
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 43.75em; // 700px
+$bp-smallest: 31.25em; // 500px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  direction: rtl;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/////////////////////
+
+// -typography
+
+////////////////////
+
+body {
+  font-family: BYekan, "BYekan", tahoma;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $color-grey-dark-4;
+  background-color: $color-bg-body;
+  padding-right: 5rem;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    padding-right: 0;
+  }
+}
+
+section {
+  width: 100%;
+  padding: 7rem 7rem 5rem 0;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  display: none !important;
+
+  transition: all 1s linear;
+
+  @media only screen and (max-width: $bp-large) {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 2rem 5rem;
+    display: block !important;
+  }
+}
+
+.section-active {
+  left: 0 !important;
+  display: block !important;
+}
+
+.text-light {
+  color: $color-grey-dark-2;
+}
+
+.text-yellow {
+  color: $color-primary;
+}
+
+.heading-primary {
+  color: $color-grey-dark-3;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  color: $color-grey-dark-4;
+  font-size: 4rem;
+  font-weight: 700;
+  display: block;
+  margin-block-start: 0;
+}
+
+.heading-tertiary {
+  color: $color-grey-dark-4;
+  font-size: 2.3rem;
+  font-weight: 700;
+  display: block;
+}
+
+.heading-four {
+  color: $color-grey-dark-4;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.paragraph {
+  color: $color-grey-dark-2;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.section-title {
+  width: 50%;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+
+  p {
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    text-align: center !important;
+  }
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $color-grey-dark-2;
+  font-size: 1.4rem;
+  padding-right: 1.5rem;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $color-grey-dark;
+  font-size: 1.4rem;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $color-grey-dark;
+  font-size: 1.4rem;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $color-grey-dark;
+  font-size: 1.4rem;
+}
+
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+  display: none;
+  width: 8px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $color-primary;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/////////////////////
+
+// -utilities
+
+////////////////////
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-left-small {
+  margin-left: 2rem;
+}
+
+.u-margin-right-small {
+  margin-right: 2rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 5rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 7rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 5rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 7rem !important;
+}
+.u-margin-top-huge {
+  margin-top: 12rem !important;
+}
+
+.u-margin-y-medium {
+  margin: 5rem 0 !important;
+}
+
+.content {
+  background-color: $color-bg-content;
+  border-radius: 1.5rem;
+}
